@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Bread and Circuces</title>
+</head>
+<body style="text-align: center; margin:0;">
+<p id="btn" style="font-size: 30px; cursor: pointer;"><b>Play</b></p>
+<canvas id="unity-canvas" width=1280 height=720 style="background: #231F20; height:99.14vh; aspect-ratio:16/9"></canvas>
+    <script src="Build/NoAdAndAnimBuild.loader.js"></script>
+<script>
+    document.querySelector('#btn').addEventListener('click', ()=>{
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/NoAdAndAnimBuild.data",
+            frameworkUrl: "Build/NoAdAndAnimBuild.framework.js",
+            codeUrl: "Build/NoAdAndAnimBuild.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "DefaultCompany",
+            productName: "Bread and Circuces",
+            productVersion: "0.0.0.1",
+            // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+            // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        });
+    });
+</script>
+</body>
+</html>
