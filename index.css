@@ -1,4 +1,157 @@
-p{
+/* game */
+/*
+body {
+    text-align: center;
+    margin: 0;
+    !*background-image: url(https://sun9-31.userapi.com/impg/_uoBk4W2Uc9lD3LYQN1wYetFdq_NAsqqqZ-Xog/3PX1PyByTyo.jpg?size=1522x856&quality=96&sign=1fe35081451f0a2237526c49dd3cec37&type=album);*!
+    !*backdrop-filter: blur(40px);*!
+    height: 100%;
+}
+
+p {
+    margin: 0 0 20px 0;
     font-size: 30px;
     cursor: pointer;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(18, 15, 11, 0.05);
+    z-index: 25;
+}
+
+.hero{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.mount-light{
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    z-index: 3;
+}
+
+.mount-blue{
+    position: absolute;
+    width: 100%;
+}
+
+.sky{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.img-title{
+    position: absolute;
+    z-index: 4;
+    top: calc(35% - 2rem);
+    left: calc(10% - 2rem);
+    width: 40%;
+}
+
+section{
+    width: 100%;
+    background-color: #13100c;
+    position: relative;
+    color: #ba9253;
+}
+
+.container{
+    padding: 5rem 0;
+}
+
+section .row{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+section img{
+    width: 100%;
+}
+
+section .row > *{
+    margin: 3rem;
+}
+
+.content{
+    color: #ba9253;
+}
+
+
+/* Description Start */
+
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 100%;
+    z-index: 20;
+    background: linear-gradient(to top, #13100c, transparent);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.border{
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #ba9253;
+    bottom: 0;
+    left: 0;
+}
+
+h1{
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-align: center;
 }
