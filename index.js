@@ -1,6 +1,6 @@
-// const btnPlay = document.querySelector('#btn');
+const btnPlay = document.querySelector('.btn-play');
 
-// btnPlay.addEventListener('click', ()=>{
+btnPlay.addEventListener('click', () => {
 //     createUnityInstance(document.querySelector("#unity-canvas"), {
 //         dataUrl: "Build/NoAdAndAnimBuild.data",
 //         frameworkUrl: "Build/NoAdAndAnimBuild.framework.js",
@@ -9,10 +9,8 @@
 //         companyName: "DefaultCompany",
 //         productName: "Bread and Circuces",
 //         productVersion: "0.0.0.1",
-//         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-//         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
 //     });
-// });
+});
 
 const translate = document.querySelectorAll(".translate");
 const shadow = document.querySelector(".shadow");
