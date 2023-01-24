@@ -5,6 +5,8 @@
 }
 
 body {
+    margin: 0;
+    overflow-x: hidden;
     font-family: 'Mediator', sans-serif;
 }
 
@@ -39,6 +41,7 @@ header {
 
 .hero {
     position: absolute;
+    top: -15%;
     width: 100%;
     z-index: 5;
 }
@@ -76,11 +79,15 @@ header {
     border: none;
     background: url('img/Group 1037.png') no-repeat;
     position: absolute;
-    z-index: 10;
+    z-index: 30;
     top: 55%;
     left: 18%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.btn-header-2 {
+    left: 36%;
 }
 
 .btn-header a {
@@ -102,7 +109,7 @@ h1 {
     width: 100%;
     height: 100px;
     left: 0;
-    bottom: 100%;
+    bottom: 0;
     z-index: 20;
     background: linear-gradient(to top, #13100c, transparent);
 }
@@ -116,6 +123,7 @@ section {
 
 .container {
     padding: 5rem 0;
+    overflow-x: hidden;
 }
 
 section .row {
@@ -204,6 +212,49 @@ section .row > * {
 
     header {
         height: 90vh;
+    }
+
+    .hero {
+        width: auto;
+        height: 100vh;
+        top: auto;
+        right: -10%;
+    }
+
+    .mount-light {
+        width: auto;
+        height: 100vh;
+        top: 20%;
+    }
+
+    .mount-blue {
+        width: auto;
+        height: 100vh;
+    }
+
+    .sky {
+        width: auto;
+        height: 90vh;
+        top: 0;
+        left: -60%;
+    }
+
+    .img-title {
+        top: calc(15% - 2rem);
+        left: calc(40% - 2rem);
+        width: 60%;
+    }
+
+    .btn-header {
+        background: url('img/Group 1036.png') no-repeat;
+        background-size: contain;
+        top: auto;
+        bottom: -28px;
+        left: 27%;
+    }
+
+    .btn-header-2 {
+        left: 73%;
     }
 
     /* parallax end*/
