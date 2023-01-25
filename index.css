@@ -70,7 +70,7 @@ header {
 .img-title {
     position: absolute;
     z-index: 4;
-    top: calc(35% - 2rem);
+    top: calc(25% - 2rem);
     left: calc(10% - 2rem);
     width: 40%;
 }
@@ -80,8 +80,9 @@ header {
     background: url('img/Group 1037.png') no-repeat;
     position: absolute;
     z-index: 30;
-    top: 55%;
+    /*top: 50%;*/
     left: 18%;
+    top: calc(50% - 2rem);
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
