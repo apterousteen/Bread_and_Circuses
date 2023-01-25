@@ -80,11 +80,26 @@ header {
     background: url('img/Group 1037.png') no-repeat;
     position: absolute;
     z-index: 30;
-    /*top: 50%;*/
     left: 18%;
     top: calc(50% - 2rem);
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    width: 200px;
+    height: 90px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-header a {
+    text-decoration: none;
+}
+
+.btn-header:hover {
+    cursor: pointer;
+
 }
 
 .btn-header-2 {
