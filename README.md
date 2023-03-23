@@ -1,6 +1,8 @@
 # Описание
 Лендинг для игры "Хлеба и Зрелищ"
 
+**Ссылка:** https://apterousteen.github.io/Bread_and_Circuses/
+
 # Игра
 **Репозиторий:** https://github.com/QTpierogi/Bread-and-Circuces
 
